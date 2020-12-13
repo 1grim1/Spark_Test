@@ -1,2 +1,4 @@
-package ru.parLab;public class SparkJob {
+package ru.parLab;
+
+public class SparkJob {
 }
