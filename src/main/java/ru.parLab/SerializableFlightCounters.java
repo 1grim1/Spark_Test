@@ -54,14 +54,12 @@ public class SerializableFlightCounters implements Serializable {
                 left.getFlightCount() + right.getFlightCount());
     }
 
-    public static outAsString(SerializableFlightCounters ptrToSFC){
+    public static String outAsString(SerializableFlightCounters ptrToSFC){
         return "[Max delay:" + ptrToSFC.getMaxDelay() +
                 " Count of delays: " + ptrToSFC.getCountOfDelayed() +
                 " Count of cancelled: " + ptrToSFC.getCountOfCancelled() +
                 "percent of delays: " + (float)((100 * ptrToSFC.getCountOfDelayed() / ptrToSFC.getFlightCount())) +
                 "percent of canceled: " + ((float)(100 * ptrToSFC.getCountOfCancelled() / ptrToSFC.getFlightCount())) +
-                " ] ";
+                " ]\n";
     }
-
-
 }
