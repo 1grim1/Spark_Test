@@ -1,2 +1,4 @@
-package ru.parLab;public class SerializableFlightCounters {
+package ru.parLab;
+
+public class SerializableFlightCounters {
 }

@@ -30,8 +30,5 @@ public class SparkJob {
 
                     return new Tuple2<>(destinationAirportID, table[AirportNameIndex]);
                 });
-
-
-
     }
 }
