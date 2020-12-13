@@ -2,15 +2,15 @@ package ru.parLab;
 
 import java.io.Serializable;
 
-public class SerializebleFlight implements Serializable {
+public class SerializableFlight implements Serializable {
     private int destAirportID;
     private float delay;
     private int primaryAirportID;
     private float cancelledFlag;
 
-    public SerializebleFlight(){}
+    public SerializableFlight(){}
 
-    public SerializebleFlight(int destAirportID, int delay, int primaryAirportID){
+    public SerializableFlight(int destAirportID, int delay, int primaryAirportID){
         this.delay = delay;
         this.primaryAirportID = primaryAirportID;
         this.destAirportID = destAirportID;
