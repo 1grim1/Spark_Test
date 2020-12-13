@@ -1,7 +1,7 @@
 package ru.parLab;
 
 public class SerializableFlightCounters {
-    private float 
+    private float maxDelay;
 
 
 }
