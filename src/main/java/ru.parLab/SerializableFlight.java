@@ -10,10 +10,11 @@ public class SerializableFlight implements Serializable {
 
     public SerializableFlight(){}
 
-    public SerializableFlight(int destAirportID, int delay, int primaryAirportID){
+    public SerializableFlight(int destAirportID, float delay, int primaryAirportID, float cancelledFlag){
         this.delay = delay;
         this.primaryAirportID = primaryAirportID;
         this.destAirportID = destAirportID;
+        this.cancelledFlag = cancelledFlag;
     }
 
     public int getDestAirportID(){
@@ -24,7 +25,7 @@ public class SerializableFlight implements Serializable {
         return this.cancelledFlag;
     }
 
-    public float getDelay(){
+    public float getAirportDelay(){
         return this.delay;
     }
 

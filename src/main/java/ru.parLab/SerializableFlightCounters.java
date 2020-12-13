@@ -55,11 +55,11 @@ public class SerializableFlightCounters implements Serializable {
     }
 
     public static String outAsString(SerializableFlightCounters ptrToSFC){
-        return "[Max delay:" + ptrToSFC.getMaxDelay() +
+        return "{Max delay:" + ptrToSFC.getMaxDelay() +
                 " Count of delays: " + ptrToSFC.getCountOfDelayed() +
                 " Count of cancelled: " + ptrToSFC.getCountOfCancelled() +
                 "percent of delays: " + (float)((100 * ptrToSFC.getCountOfDelayed() / ptrToSFC.getFlightCount())) +
                 "percent of canceled: " + ((float)(100 * ptrToSFC.getCountOfCancelled() / ptrToSFC.getFlightCount())) +
-                " ]\n";
+                " }\n";
     }
 }
